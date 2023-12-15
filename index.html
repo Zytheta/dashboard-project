@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris's Launch Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scripts.js" defer></script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="header-wrapper">
+            <div class="top-bar" id="top-bar">
+                <form action="/search" method="get">
+                    <button type="submit">
+                        <img src="./images/magnifying-glass.svg" alt="Search Icon" id="search-icon"></button>
+                    <input type="text" placeholder="Search" id="search-bar">
+                </form>
+                <div class="user-header">
+                    <div class="alert-bell">
+                        <img src="./images/bell-jar.svg" alt="Bell Icon" id="alert-bell">
+                    </div>
+                    <div class="profile-image-small">
+                        <img src="./images/giraffe.svg" alt="Cartoon Giraffe Profile image" id="profile-image-small">
+                    </div>
+                    <h4 class="name" id="name">Chris Turpin</h4>
+                </div>
+            </div>
+            <div class="bottom-bar" id="bottom-bar">
+                <div class="left-box">
+                    <img src="./images/giraffe.svg" id="profile-image-large" alt="Cartoon Giraffe Profile image">
+                    <div class="greeting-box" id="greeting-box">
+                        <p class="greeting-text" id="greeting-text">Greetings</p>
+                        <h5 class="nameplate" id="nameplate">Chris (@turpin.com)</h5>
+                    </div>
+                </div>
+                <div class="header-button-group">
+                    <button type="button" class="header-btn" onclick="goToNew()" id="new">New</button>
+                    <button type="button" class="header-btn" onclick="goToUpload()" id="upload">Upload</button>
+                    <button type="button" class="header-btn" onclick="goToShare()" id="share">Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-wrapper">
+            <div class="sidebar">
+                <h1 class="splash-image" id="splash-image"><a href="./index.html">Dashboard</a></h1>
+                <div class="upper-buttons">
+                    <button class="btn-style" type="button" onclick="goToHomePage()" id="home">Home</button>
+                    <button class="btn-style" type="button" onclick="goToProfile()" id="profile">Profile</button>
+                    <button class="btn-style" type="button" onclick="goToMessages()" id="messages">Messages</button>
+                    <button class="btn-style" type="button" onclick="goToHistory()" id="history">History</button>
+                    <button class="btn-style" type="button" onclick="goToTasks()" id="tasks">Tasks</button>
+                    <button type="button" class="btn-style" onclick="goToCommunities()"
+                        id="communities">Communities</button>
+                </div>
+                <div class="lower-buttons">
+                    <button type="button" class="btn-style" onclick="goToSettings()" id="settings">Settings</button>
+                    <button type="button" class="btn-style" onclick="goToSupport()" id="support">Support</button>
+                    <button type="button" class="btn-style" onclick="goToPrivacy()" id="privacy">Privacy</button>
+                    <div class="topbar"></div>
+                    <div class="projectarea"></div>
+                </div>
+            </div>
+        </div>
+        <div class="article-space-wrapper">
+            <div class="projects-area" id="projects-area">
+                <h4 class="projects-title">Ongoing Projects</h4>
+                <div class="project-item" id="project-item1">
+                    <h5 class="project-title">Test Article 1</h5>
+                    <p class="project-text">Lorem ipsum lol I don't know.</p>
+                    <div class="share-btns">
+                        <img src="./images/favourite-star-white.svg" alt="Favorite Icon" onclick="favoriteArticle()">
+                        <img src="./images/hide-icon.svg" alt="Hide Icon" onclick="hideArticle()">
+                        <img src="./images/share-icon.svg" alt="Share Icon" onclick="shareArticle()">
+                    </div>
+                </div>
+                <div class="project-item" id="project-item2">
+                    <h5 class="project-title">Test Article 2</h5>
+                    <p class="project-text">Lorem ipsum lol I don't know.</p>
+                    <div class="share-btns">
+                        <img src="./images/favourite-star-white.svg" alt="Favorite Icon" onclick="favoriteArticle()">
+                        <img src="./images/hide-icon.svg" alt="Hide Icon" onclick="hideArticle()">
+                        <img src="./images/share-icon.svg" alt="Share Icon" onclick="shareArticle()">
+                    </div>
+                </div>
+                <div class="project-item" id="project-item3">
+                    <h5 class="project-title">Test Article 3</h5>
+                    <p class="project-text">Lorem ipsum lol I don't know.</p>
+                    <div class="share-btns">
+                        <img src="./images/favourite-star-white.svg" alt="Favorite Icon" onclick="favoriteArticle()">
+                        <img src="./images/hide-icon.svg" alt="Hide Icon" onclick="hideArticle()">
+                        <img src="./images/share-icon.svg" alt="Share Icon" onclick="shareArticle()">
+                    </div>
+                </div>
+                <div class="project-item" id="project-item4">
+                    <h5 class="project-title">Test Article 4</h5>
+                    <p class="project-text">Lorem ipsum lol I don't know.</p>
+                    <div class="share-btns">
+                        <img src="./images/favourite-star-white.svg" alt="Favorite Icon" onclick="favoriteArticle()">
+                        <img src="./images/hide-icon.svg" alt="Hide Icon" onclick="hideArticle()">
+                        <img src="./images/share-icon.svg" alt="Share Icon" onclick="shareArticle()">
+                    </div>
+                </div>
+            </div>
+            <div class="announcements-area" id="announcements-area">
+                <h4 class="announcements-area-title">Announcements <em>Bruh</em></h4>
+                <div class="announcements-box">
+                    <div class="announcement" id="announcement1">
+                        <h5 class="announcement-title">Big News Everyone!</h5>
+                        <p class="announcement-text">We are working on a device that changes the voices in their heads to
+                            match well known phrases said on TV shows!</p>
+                    </div>
+                    <div class="announcement" id="announcement2">
+                        <h5 class="announcement-title">Path of Problem Solving</h5>
+                        <p class="announcement-text">See the POPS system, in pre-alpha now!</p>
+                    </div>
+                    <div class="announcement" id="announcement3">
+                        <h5 class="announcement-title">Is Civilization Over?</h5>
+                        <p class="announcement text">If you're reading this. No.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="trending-area" id="trending-area">
+                <h4 class="trending-header" id="trending-header">Trending</h4>
+                <div class="affiliate-box" id="affiliate-box">
+                    <div class="affiliate-container" id="affiliate-container1">
+                        <img src="images/dino-pfp.svg" alt="dinosaur" id="affiliate-profile-picture1">
+                        <span class="affiliate-information">
+                            <span class="affiliate-name" id="affiliate-name1">Bromancius Rex</span>
+                            <span class="affiliate-handle" id="affiliate-handle1">@BRex</span>
+                        </span>
+                        </img>
+                    </div>
+                    <div class="affiliate-container" id="affiliate-container2">
+                        <img src="./images/giraffe.svg" alt="giraffe" id="affiliate-profile-picture2">
+                        <span class="affiliate-information">
+                            <span class="affiliate-name" id="affiliate-name2">Chris Turpin</span>
+                            <span class="affiliate-handle" id="affiliate-handle2">@turpin</span>
+                        </span>
+                        </img>
+                    </div>
+                    <div class="affiliate-container" id="affiliate-container3">
+                        <img src="./images/squirrel-pfp.svg" alt="squirrel" id="affiliate-profile-picture3">
+                        <span class="affiliate-information">
+                            <span class="affiliate-name" id="affiliate-name3">Squirrelly Steve</span>
+                            <span class="affiliate-handle" id="affiliate-handle3">@stvSqurl</span>
+                        </span>
+                        </img>
+                    </div>
+                    <div class="affiliate-container" id="affiliate-container4">
+                        <img src="./images/duck-pfp.svg" alt="duck" id="affiliate-profile-picture4">
+                        <span class="affiliate-information">
+                            <span class="affiliate-name" id="affiliate-name4">Dangerous Duck</span>
+                            <span class="affiliate-handle" id="affiliate-handle4">@dangerDuck</span>
+                        </span>
+                        </img>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
